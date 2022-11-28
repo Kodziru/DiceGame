@@ -1,0 +1,60 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <title>DICE GAME</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="p0-panel active">
+                <div class="p-name" id="name-0">Player 1</div>
+                <div class="p-score" id="score-0">0</div>
+                <div class="p-current-box">
+                    <div class="p-current-label">Current</div>
+                    <div class="p-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            <div class="p1-panel">
+                <div class="p-name" id="name-1">Player 2</div>
+                <div class="p-score" id="score-1">0</div>
+                <div class="p-current-box">
+                    <div class="p-current-label">Current</div>
+                    <div class="p-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            <button class="btn__new">
+                <i class="btn-plus-outline"></i>New game
+            </button>
+            <button class="btn-roll"><i class="btn-loop"></i>Roll dice</button>
+            <button class="btn-hold">
+                <i class="btn-download-outline"></i>Hold
+            </button>
+
+            <input type="text" placeholder="Final Score" class="finish-score" />
+            <img
+                src="../img/1dice.png"
+                alt="Dice"
+                class="dice"
+                id="game-dice-1"
+            />
+            <img
+                src="../img/2dice.png"
+                alt="Dice"
+                class="dice"
+                id="game-dice-1"
+            />
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

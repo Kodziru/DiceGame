@@ -1,0 +1,173 @@
+.finish-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: "Lato";
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.finish-score:focus {
+    outline: none;
+}
+
+#game-dice-1 {
+    top: 120px;
+}
+
+#game-dice-1 {
+    top: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background: #edf2f4;
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    border: #ef233c 1px solid;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.p0-panel,
+.p1-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+.p-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.p-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #eb4d4d;
+    margin-bottom: 130px;
+}
+
+.active {
+    background-color: #f6dbe6;
+}
+.active .p-name {
+    font-weight: 300;
+}
+
+.active .p-name::after {
+    font-size: 45px;
+    position: absolute;
+    color: #eb4d4d;
+    top: -6px;
+    right: 9px;
+}
+
+.p-current-box {
+    background-color: #ef233c;
+    border-radius: 12px;
+    color: #fff;
+    width: 45%;
+
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.p-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.p-current-score {
+    font-size: 30px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover i {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn__new {
+    top: 45px;
+}
+.btn-roll {
+    top: 403px;
+}
+.btn-hold {
+    top: 467px;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+.winner .p-name {
+    font-weight: 800;
+    color: #eb4d4d;
+}
